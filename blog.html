@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="shortcut icon" href="/imgs/quiz.png" type="image/x-icon">
+   <title>Quiz Hero</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="./index.js" defer></script>
+
+   <script>
+      tailwind.config = {
+         theme: {
+            extend: {
+               fontFamily: {
+                  common: ["Rubik", "sans-serif"],
+               },
+            },
+         },
+      };
+   </script>
+</head>
+
+<body class="bg-white font-common">
+   <!-- Header/Navbar section start -->
+   <header class="h-16 flex items-center shadow-sm">
+      <nav class="flex justify-between items-center w-9/12 mx-auto">
+         <div class="text-zinc-800 font-bold uppercase">
+            <a href="/index.html">
+               <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+            </a>
+            <p class="text-[10px] font-normal capitalize -mt-1">
+               Get ready to Quiz and be amazed!
+            </p>
+         </div>
+         <button class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+            Blog
+         </button>
+      </nav>
+   </header>
+   <!-- Header/Navbar section end -->
+
+
+   <main>
+      <section class="text-gray-400 bg-gray-800 body-font">
+         <h2 class="text-3xl text-white text-center uppercase py-3">blog Post</h2>
+         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+               class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+               <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Difference between
+                  <br class="hidden lg:inline-block"> map(), filter(), forEach() and find() in javascript
+               </h1>
+               <p class="mb-8 leading-relaxed">In JavaScript, map, filter, forEach, and find are array methods used to
+                  manipulate and iterate over arrays.
+               <ul>
+                  <li class="py-1"> => .Map() return a new array by executing a provided function on each element of the
+                     original array.
+                  </li>
+                  <li class="py-1"> => .Filter() creates a new array containing all elements of the original array that
+                     pass a provided test
+                     function.</li>
+                  <li class="py-1"> => .forEach() executes a provided function once for each element in an array. It
+                     doesn't return
+                     anything, but is commonly used to iterate over an array and perform some side effect for each
+                     element.</li>
+                  <li class="py-1"> => .Find()returns the value of the first element in the array that satisfies the
+                     provided testing
+                     function.</li>
+               </ul>
+               </p>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+               <img class="object-cover object-center rounded" alt="hero" src="/imgs/js arrow methrd.png">
+            </div>
+         </div>
+
+         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+               <img class="object-cover object-center rounded" alt="hero"
+                  src="/imgs/difference between local storage, session storage and cookies.png">
+            </div>
+
+            <div
+               class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+               <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Difference between
+                  <br class="hidden lg:inline-block">local storage, session storage and cookies?
+               </h1>
+               <span class="mb-8 leading-relaxed">
+                  <ul>
+                     <li class="py-1"> => Local storage is useful for storing data that the user will need to access
+                        later, such as offline data. </li>
+                     <li class="py-1"> => Session storage is a great way to improve the performance of your web
+                        applications.</li>
+                     <li class="py-1"> => Cookies are a good choice for storing data that should not be persisted for a
+                        long time</li>
+                  </ul>
+               </span>
+            </div>
+         </div>
+
+         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+               class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+               <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">What is Event Loop?
+                  <br class="hidden lg:inline-block">How does work??
+               </h1>
+               <div>
+                  <p class="mb-8 leading-relaxed">The Event Loop has one simple job — to monitor the Call Stack and the
+                     Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue
+                     and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick
+                     in
+                     the Event Loop.</p>
+                  <span>
+                     <h3 class="text-lg text-white py-1">Here is an example of how an event loop works in JavaScript:
+                     </h3>
+                     <ul>
+                        <li class="py-1"> => A user clicks a button on a web page.</li>
+                        <li class="py-1"> => Browser generates an event that is placed in the event queue.
+                        </li>
+                        <li class="py-1"> => Lvent loop continuously checks the event queue for new events.</li>
+                        <li class="py-1"> => When the click event is detected, the event loop processes it by executing
+                           the code associated with the event, such as a JavaScript function that updates the UI or
+                           makes an API call.</li>
+                        <li class="py-1"> => After the code execution is complete, the event loop returns to waiting for
+                           new events in the event queue.</li>
+                     </ul>
+                  </span>
+               </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+               <img class="object-cover object-center rounded" alt="hero" src="/imgs/Event Loop.png">
+            </div>
+         </div>
+
+         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+               <img class="object-cover object-center rounded" alt="hero" src="/imgs/function.png">
+            </div>
+
+            <div
+               class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+               <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">How are QuizTimer and ChooseQuiz
+                  <br class="hidden lg:inline-block">two functions working?
+               </h1>
+               <div>
+                  <div>
+                     <h3 class="text-lg text-white py-1">QuizTimer function works</h3>
+                     <p class="mb-8 leading-relaxed"> => quizTimer() function sets up a timer that updates a specific
+                        HTML
+                        element on a webpage and adds some visual effects to draw attention to the timer as time passes.
+                     </p>
+                  </div>
+
+                  <div>
+                     <h3 class="text-lg text-white py-1">chooseQuiz function works</h3>
+                     <p class="mb-8 leading-relaxed"> => chooseQuiz() function provides a way for users to store their
+                        answers for quiz questions in an array, and to update the display of these answers in real-time.
+                        It also ensures that only one object is stored in the answers array for each quiz question, even
+                        if the user changes their answer multiple times.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+</body>
+
+</html>
